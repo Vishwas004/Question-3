@@ -1,0 +1,39 @@
+body{
+    background-color: #51e2f5;
+}
+h1{
+    color: rgba(255, 0, 0, 0.834);
+    background-color: #9df9ee69;
+    padding: 5%;
+    font-weight: 500;
+    font-size:50px;
+    text-shadow: 10px 5px 6px pink;
+    margin-bottom: 3%;
+}
+button{
+    padding: 1%;
+    margin-bottom: 2%;
+    background-color:#ffa8B6;
+    font-size: large;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    border: solid 2px red;
+    cursor: pointer;
+}
+button:hover{
+    font-size:large;
+    background-color: #e8f9fd;
+    color: black;
+    border: solid 2px red;
+}
+#Question{
+    padding: 2%;
+    margin-bottom: 1%;
+}
+.main{
+    background-color:#e8f9fd;;
+}
+li{
+    padding: 10px;
+}
