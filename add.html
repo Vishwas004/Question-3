@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>Add Question</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
+    <script>
+        $(document).ready(function(){
+            $(".upload_btn").click(function(){
+                alert("Your Data Successfully");
+            })
+        });
+    </script>
     <div id="add_Que">
         <h3>Enter The Question</h3>
         <ol>
-            <li><input type="text" name="Question" placeholder="Question" id="q1">
+            <li><input type="text" name="Question"  placeholder="Question" id="q1">
                 <ul>
-                    <li><input type="text" name="Question" placeholder="option-A" id="q1a"></li>
-                    <li><input type="text" name="Question" placeholder="option-B" id="q1b"></li>
-                    <li><input type="text" name="Question" placeholder="option-C" id="q1c"></li>
-                    <li><input type="text" name="Question" placeholder="option-D" id="q1d"></li>
+                    <li><input type="text" name="Question"  placeholder="option-A" id="q1a"></li>
+                    <li><input type="text" name="Question"  placeholder="option-B" id="q1b"></li>
+                    <li><input type="text" name="Question"  placeholder="option-C" id="q1c"></li>
+                    <li><input type="text" name="Question"  placeholder="option-D" id="q1d"></li>
                 </ul>
             </li>
             <li><input type="text" name="Question" placeholder="Question" id="q2">
@@ -93,8 +100,7 @@
                 </ul>
             </li>
         </ol>
-        <button onclick="Add()">Upload Date</button>
-        <a href="index.html"><button>  Home </button></a>
+        <a href="index.html"><button class="upload_btn" onclick="Add()">Upload Date</button></a>
     </div>
     <script src="script.js"></script>
 </body>

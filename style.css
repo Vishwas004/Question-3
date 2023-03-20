@@ -37,3 +37,18 @@ button:hover{
 li{
     padding: 10px;
 }
+/* -------play---------- */
+.user_main{
+    text-align: center;
+    padding: 5%;
+    border: solid 2px #ffa8B6;
+}
+#username{
+    border-radius: 10px;
+    border: solid 2px pink;
+    padding: 1%;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}

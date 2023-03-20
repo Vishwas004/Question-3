@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Play Quiz</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
 </head>
+<script>
+    $(document).ready(function () {
+        $(".quiz-container").hide();
+        $("#user_btn").click(function () {
+            $(".quiz-container").show(1500);
+            $(".user_main").hide();
+        });
+
+    });
+</script>
 <body>
-    <!-- <div class="main">
-        <h4 id="Question">..............Question..............</h4>
-        <ul style="list-style: none;">
-            <li>
-                <input type="radio" name="option" id="a" class="option"><label for="a"
-                    id="a_ans">................Option..............</label>
-            </li>
-            <li>
-                <input type="radio" name="option" id="b" class="option"><label for="b"
-                    id="b_ans">................Option..............</label>
-            </li>
-            <li>
-                <input type="radio" name="option" id="c" class="option"><label for="c"
-                    id="c_ans">................Option..............</label>
-            </li>
-            <li>
-                <input type="radio" name="option" id="d" class="option"><label for="d"
-                    id="d_ans">................Option..............</label>
-            </li>
-            <button id="submit" style="margin-top: 1%;">Next</button>
-            <a href="index.html"><button>  Home </button></a>
+    <div class="user_main">
+        <ul>
+            <li><h4>Enter Username</h4></li>
+            <li><input type="box" id="username" placeholder="Username"></li>
+            <Button id="user_btn" onclick="Uname()" >Next</Button>
         </ul>
-    </div>  -->
+    </div>
     <div class="quiz-container" id="quiz">
 
         <div class="quiz-header">
-
+            <P> Username : <label id="uN"></label></P>
             <h4 id="question">Question is loading...</h4>
             <hr>
             <ul>
@@ -53,4 +54,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

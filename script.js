@@ -3,7 +3,11 @@ function Add() {
     var readData = readLocal(addData);
     insert(readData);
 }
-
+function Uname() {
+    var u = document.getElementById("username").value;
+    localStorage.setItem("username",u);
+    document.getElementById("uN").innerText = localStorage.getItem("username"); 
+}
 function manyDAta () {
     var Q1 = document.getElementById("q1").value;
      var Q1a = document.getElementById("q1a").value;
@@ -38,15 +42,18 @@ function manyDAta () {
 }
 
 function readLocal(addData) {
-    var a = localStorage.setItem("",addData[0]);
-    var b = localStorage.setItem("",addData[1]);
-    var c = localStorage.setItem("",addData[2]);
-    var d = localStorage.setItem("",addData[3]);
-    var e = localStorage.setItem("",addData[4]);
+    var a = localStorage.setItem("q1",addData[0]);
+    var b = localStorage.setItem("q1a",addData[1]);
+    var c = localStorage.setItem("q1b",addData[2]);
+    var d = localStorage.setItem("q1c",addData[3]);
+    var e = localStorage.setItem("q1d",addData[4]);
+    document.getElementById("question").innerText = localStorage.getItem(addData[0]); 
+
 }
+
 // quiz logic...
 const htmlquizData = [{
-    question: "Q.1 What does HTML stand for?",
+    question:"html full form ?",
     a: "Home text Markup langage",
     b: "Hyper text Markup langage",
     c: "HyperLink text Markup langage",
